@@ -14,12 +14,14 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.5.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   intl: ^0.16.1
+  http: ^0.12.1
+  shared_preferences: ^0.5.7+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -28,7 +30,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  provider: ^4.0.5
+  provider: ^3.0.0
+  
+analyzer:
+  enable-experiment:
+    - spread-collections
 
 
 # For information on the generic Dart part of this file, see the
@@ -43,8 +49,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
+  assets:
+   - assets/original.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
